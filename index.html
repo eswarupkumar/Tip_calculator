@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="images.jpg" type="image/gif" sizes="any">
+</head>
+<body>
+    <div class="header">
+        <h1 class="heading">Tip Calculator</h1>
+    </div>
+    <div class="main">
+        <form class="form-style-9">
+            <ul>
+            <li>
+                <input type="number" id="billvalue" name="field1" class="field-style field-split align-left" placeholder="Enter the Bill" onchange="bill()" />
+                <!-- <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" /> -->
+            
+            </li>
+            <li>
+                <!-- <button><img src="plus.png" class=""></button> -->
+                <input type="number" id="tipvalue" name="field3" class="field-style field-split align-left" placeholder="Tip %" onchange="tip()"/>
+                <!-- <button><img src="plus.png" class=""></button> -->
+                <!-- <input type="url" name="field4" class="field-style field-split align-right" placeholder="Website" /> -->
+            </li>
+            <li>
+            <input type="number" name="field3" id="npeople" class="field-style field-split align-left" placeholder="No. of People" onchange="people()" />
+            </li>
+            <h2>Tip :     <span id="outtip"></span></h2>
+            <h2>Total :       <span id="outtotal"></span></h2>
+
+            </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
